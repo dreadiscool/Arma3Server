@@ -76,7 +76,7 @@ void load_config(struct Config *config)
             config->port_no = atoi(value);
         else if (strcmp(key, "max_players") == 0)
             config->max_players = atoi(value);
-        else if (strcmp(key, "name") == 0)
+        else if (strcmp(key, "server_name") == 0)
             strcpy(config->host_name, value);
         else
             printf("Unknown server setting `%s`!\n", key);
